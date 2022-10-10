@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Navbar from "../component/navbar.svelte";
   import Title from "../component/title.svelte";
   import GlobalStyle from "../style/global.svelte";
 </script>
@@ -10,6 +11,10 @@
 <header>
   <Title />
 </header>
+
+<nav>
+  <Navbar />
+</nav>
 
 <main>
   <slot />
@@ -31,5 +36,9 @@
     align-items: center;
     max-width: 800px;
     margin: auto;
+  }
+
+  nav {
+    margin: 1em 0;
   }
 </style>
