@@ -1,0 +1,17 @@
+$colorBg: #1c1c1c;
+$colorFg: #ffe8b1;
+
+@font-face {
+  font-family: Coquette Light;
+  src: url("/Coquette Light.ttf");
+}
+
+html {
+  background: $colorBg;
+  color: $colorFg;
+}
+
+h1 {
+  font-family: Coquette Light, sans-serif;
+  font-size: 3em;
+}
