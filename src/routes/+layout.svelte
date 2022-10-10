@@ -1,26 +1,35 @@
 <script lang="ts">
-import Title from "../component/title.svelte";
-import GlobalStyle from "../style/global.svelte";
+  import Title from "../component/title.svelte";
+  import GlobalStyle from "../style/global.svelte";
 </script>
 
 <svelte:head>
-    <title>Layla El-Sekaifi</title>
+  <title>Layla El-Sekaifi</title>
 </svelte:head>
 
 <header>
-<Title />
+  <Title />
 </header>
 
 <main>
-<slot></slot>
+  <slot />
 </main>
 
 <GlobalStyle />
 
 <style lang="scss">
-:root {
+  header {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    margin: 1em 0;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+  }
 </style>
