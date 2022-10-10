@@ -23,27 +23,42 @@
 </script>
 
 <a href="/">
-  <h1>
-    <img bind:this={icon} alt="Icon" src="/layla.svg" />
-    Layla El-Sekaifi
-  </h1>
+  <img bind:this={icon} alt="Icon" src="/layla.svg" />
+  <h1>Layla El-Sekaifi</h1>
+  <span>Graphics Editor</span>
 </a>
 
 <style lang="scss">
+  a {
+    display: grid;
+    grid-template: 1fr / 100px 1fr;
+
+    img {
+      justify-self: center;
+      grid-row: span 2;
+      height: 100%;
+    }
+    span {
+      font-family: Coquette Light, sans-serif;
+      font-size: 1.5em;
+      justify-self: center;
+    }
+  }
+
   a {
     color: inherit;
     text-decoration: inherit;
   }
 
+  img {
+    vertical-align: middle;
+    visibility: hidden;
+    transform-origin: 50% 0;
+  }
+
   h1 {
     font-family: Coquette Light, sans-serif;
     font-size: 3em;
-    img {
-      vertical-align: middle;
-      height: 2em;
-      visibility: hidden;
-      transform-origin: 50% 0;
-    }
     text-shadow: 0 0 10px;
   }
 </style>
