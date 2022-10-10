@@ -1,13 +1,14 @@
-<script>
-  import GlobalStyle from "../style/global.svelte";
-
+<script lang="ts">
+import Title from "../component/title.svelte";
+import GlobalStyle from "../style/global.svelte";
 </script>
+
 <svelte:head>
     <title>Layla El-Sekaifi</title>
 </svelte:head>
 
 <header>
-<h1>Layla El-Sekaifi</h1>
+<Title />
 </header>
 
 <main>
