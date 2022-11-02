@@ -2,6 +2,9 @@
   import Navbar from "../component/navbar.svelte";
   import Title from "../component/title.svelte";
   import GlobalStyle from "../style/global.svelte";
+
+  export const ssr = false;
+  export const prerender = true;
 </script>
 
 <svelte:head>
