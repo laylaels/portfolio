@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from "$app/paths";
   import { onMount } from "svelte";
 
   let icon: HTMLImageElement | null;
@@ -22,7 +23,7 @@
   });
 </script>
 
-<a href="/">
+<a href="{base}/">
   <img bind:this={icon} alt="Icon" src="/layla.svg" />
   <h1>Layla El-Sekaifi</h1>
   <span>Graphics Editor</span>
