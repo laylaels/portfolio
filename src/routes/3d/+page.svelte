@@ -8,7 +8,7 @@
 		{ title: "Jug", file: "jug" },
 	];
 
-	const virtual_staging_count = 7;
+	const virtual_staging_count = 14;
 </script>
 
 <h2>3D</h2>
