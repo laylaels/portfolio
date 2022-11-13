@@ -7,3 +7,8 @@
 {#each ["lj", "c", "i", "f", "a", "b"] as image}
 	<img src="{base}/img/creative/art/{image}.webp" alt="Artwork" />
 {/each}
+
+<h3>Character Design</h3>
+{#each Array(6) as _, i}
+	<img src="{base}/img/creative/character/{i}.webp" alt="Character" />
+{/each}
