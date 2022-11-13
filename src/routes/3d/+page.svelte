@@ -3,9 +3,9 @@
 	import BeforeAfter from "../../component/beforeAfter.svelte";
 
 	const assets = [
-		{ title: "Coffee Set", file: "coffee_set.png" },
-		{ title: "Cups", file: "cups.png" },
-		{ title: "Jug", file: "jug.png" },
+		{ title: "Coffee Set", file: "coffee_set" },
+		{ title: "Cups", file: "cups" },
+		{ title: "Jug", file: "jug" },
 	];
 
 	const virtual_staging_count = 7;
@@ -24,5 +24,5 @@
 
 <h3>Assets</h3>
 {#each assets as { title, file }}
-	<img src="{base}/img/3d/asset/{file}" alt={title} />
+	<img src="{base}/img/3d/asset/{file}.webp" alt={title} />
 {/each}
