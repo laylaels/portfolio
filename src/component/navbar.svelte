@@ -1,14 +1,19 @@
 <script lang="ts">
   import { base } from "$app/paths";
+
+  export let pages = [
+    ["Image Manipulation", "image"],
+    ["Video", "video"],
+    ["3D & Virtual Staging", "3d"],
+    ["Creative", "creative"],
+  ];
 </script>
 
 <div class="root">
   <ul>
-    <li><a href="{base}/real-estate">Real Estate</a></li>
-    <li><a href={"#"}>Video</a></li>
-    <li><a href={"#"}>Creative</a></li>
-    <li><a href={"#"}>About</a></li>
-    <li><a href={"#"}>Contact</a></li>
+    {#each pages as [label, url]}
+      <li><a href="{base}/{url}">{label}</a></li>
+    {/each}
   </ul>
 </div>
 
