@@ -1,1 +1,0 @@
-import{S as o,i as r,s as i,q as c,r as l,b as u,A as a,h as f}from"../../../chunks/index-44e9d731.js";function m(s){let t;return{c(){t=c("TODO")},l(e){t=l(e,"TODO")},m(e,n){u(e,t,n)},p:a,i:a,o:a,d(e){e&&f(t)}}}class d extends o{constructor(t){super(),r(this,t,null,m,i,{})}}export{d as default};
