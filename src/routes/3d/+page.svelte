@@ -8,7 +8,7 @@
 		{ title: "Jug", file: "jug" },
 	];
 
-	const virtual_staging_count = 14;
+	const virtual_staging_count = 11;
 </script>
 
 <h2>3D</h2>
@@ -17,8 +17,8 @@
 {#each Array(virtual_staging_count) as _, i}
 	<BeforeAfter
 		alt="Virtual Staging"
-		before="{base}/img/3d/vstage/{i}b.jpg"
-		after="{base}/img/3d/vstage/{i}a.jpg"
+		before="{base}/img/3d/vstage/{i}b.webp"
+		after="{base}/img/3d/vstage/{i}a.webp"
 	/>
 {/each}
 
