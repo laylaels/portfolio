@@ -12,3 +12,9 @@
 {#each Array(6) as _, i}
 	<img src="{base}/img/creative/character/{i}.webp" alt="Character" />
 {/each}
+
+<style lang="scss">
+	img {
+		max-width: 100%;
+	}
+</style>
