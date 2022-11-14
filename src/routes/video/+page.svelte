@@ -20,7 +20,7 @@
 	{#each embedded as { title, src }}
 		<div>
 			<h3>{title}</h3>
-			<iframe {title} {src} width="640" height="480" />
+			<iframe {title} {src} />
 		</div>
 	{/each}
 </div>
@@ -28,8 +28,15 @@
 <style lang="scss">
 	.items {
 		display: flex;
+		width: 100%;
 		flex-direction: column;
+		align-items: stretch;
 		gap: 1em;
 		text-align: center;
+	}
+
+	iframe {
+		width: 100%;
+		height: 480px;
 	}
 </style>
