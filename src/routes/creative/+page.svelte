@@ -2,6 +2,10 @@
 	import { base } from "$app/paths";
 </script>
 
+<svelte:head>
+	<title>Creative - Layla El-Sekaifi</title>
+</svelte:head>
+
 <h2>Creative</h2>
 <h3>Art</h3>
 {#each ["lj", "c", "i", "f", "a", "b"] as image}

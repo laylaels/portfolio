@@ -6,6 +6,10 @@
 	const LOCATION = "West London";
 </script>
 
+<svelte:head>
+	<title>Layla El-Sekaifi</title>
+</svelte:head>
+
 <h2>Hi!</h2>
 <p>
 	I'm Layla El-Sekaifi, a {AGE} years-old creative and graphics editor from {LOCATION}.

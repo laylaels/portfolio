@@ -15,6 +15,10 @@
 	];
 </script>
 
+<svelte:head>
+	<title>Video - Layla El-Sekaifi</title>
+</svelte:head>
+
 <div class="items">
 	<h2>Video</h2>
 	{#each embedded as { title, src }}

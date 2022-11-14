@@ -11,6 +11,10 @@
 	const virtual_staging_count = 11;
 </script>
 
+<svelte:head>
+	<title>3D - Layla El-Sekaifi</title>
+</svelte:head>
+
 <h2>3D</h2>
 
 <h3>Virtual Staging</h3>
