@@ -15,8 +15,21 @@
 	];
 </script>
 
-<h2>Video</h2>
-{#each embedded as { title, src }}
-	<h3>{title}</h3>
-	<iframe {title} {src} width="640" height="480" />
-{/each}
+<div class="items">
+	<h2>Video</h2>
+	{#each embedded as { title, src }}
+		<div>
+			<h3>{title}</h3>
+			<iframe {title} {src} width="640" height="480" />
+		</div>
+	{/each}
+</div>
+
+<style lang="scss">
+	.items {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		text-align: center;
+	}
+</style>
