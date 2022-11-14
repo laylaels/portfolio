@@ -26,3 +26,9 @@
 {#each assets as { title, file }}
 	<img src="{base}/img/3d/asset/{file}.webp" alt={title} />
 {/each}
+
+<style lang="scss">
+	img {
+		max-width: 100%;
+	}
+</style>
