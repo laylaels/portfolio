@@ -7,8 +7,6 @@
 		{ title: "Cups", file: "cups" },
 		{ title: "Jug", file: "jug" },
 	];
-
-	const virtual_staging_count = 11;
 </script>
 
 <svelte:head>
@@ -18,7 +16,7 @@
 <h2>3D</h2>
 
 <h3>Virtual Staging</h3>
-{#each Array(virtual_staging_count) as _, i}
+{#each Array(14) as _, i}
 	<BeforeAfter
 		alt="Virtual Staging"
 		before="{base}/img/3d/vstage/{i}b.webp"
