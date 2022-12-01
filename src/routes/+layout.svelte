@@ -1,47 +1,51 @@
 <script lang="ts">
-  import Navbar from "../component/navbar.svelte";
-  import Title from "../component/title.svelte";
-  import GlobalStyle from "../style/global.svelte";
+	import Navbar from "../component/navbar.svelte";
+	import Title from "../component/title.svelte";
+	import GlobalStyle from "../style/global.svelte";
 
-  export const ssr = false;
-  export const prerender = true;
+	export const ssr = false;
+	export const prerender = true;
 </script>
 
 <svelte:head>
-  <title>Layla El-Sekaifi</title>
+	<title>Layla El-Sekaifi</title>
 </svelte:head>
 
 <header>
-  <Title />
+	<div class="title"><Title /></div>
+	<nav><Navbar /></nav>
 </header>
 
-<nav>
-  <Navbar />
-</nav>
-
 <main>
-  <slot />
+	<slot />
 </main>
 
 <GlobalStyle />
 
 <style lang="scss">
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1em 0;
-  }
+	header {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin: 1em 0;
+	}
 
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 800px;
-    margin: auto;
-  }
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 800px;
+		margin: auto;
+	}
 
-  nav {
-    margin: 1em 0;
-  }
+	nav {
+		margin: 1em 0;
+		flex: 1;
+	}
+
+	@media only screen and (min-width: 1440px) {
+		.title {
+			margin-inline-start: 3.25em;
+		}
+	}
 </style>
