@@ -30,14 +30,6 @@
 		margin: 1em 0;
 	}
 
-	main {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		max-width: 800px;
-		margin: auto;
-	}
-
 	nav {
 		margin: 1em 0;
 		flex: 1;
