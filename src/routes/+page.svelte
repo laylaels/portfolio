@@ -23,6 +23,7 @@
 		naming="Adobe Suite"
 	/>, mainly focussing on <Brand brand={brand.photoshop} /> but ranging through to
 	<Brand brand={brand.lightroom} />,
+	<Brand brand={brand.illustrator} />,
 	<Brand brand={brand.premiere} />,
 	<Brand brand={brand.after_effects} />, and <Brand brand={brand.indesign} />.
 </p>
