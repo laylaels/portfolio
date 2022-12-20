@@ -77,6 +77,11 @@
 		</div>
 	</article>
 </div>
+<article class="companies">
+	{#each [["Dexters", "dexters.svg"], ["Fletchers", "fletchers.webp"], ["Jackson Stops", "jackson.svg"], ["Redlees Studios", "redlees.webp"], ["Snellers", "snellers.webp"], ["Wetherell", "wetherell.webp"]] as [alt, image]}
+		<img {alt} src="company/{image}" />
+	{/each}
+</article>
 
 <style lang="scss">
 	.root {
@@ -133,5 +138,20 @@
 	.cats {
 		display: flex;
 		gap: 1em;
+	}
+
+	.companies {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 2em;
+		width: 100%;
+		background: #00000055;
+		margin-block-start: 3em;
+		padding-block: 1em;
+		img {
+			max-height: 90px;
+		}
 	}
 </style>
