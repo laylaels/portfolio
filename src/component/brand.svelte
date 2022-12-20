@@ -80,16 +80,22 @@
 	export let size: string = "1.5em";
 </script>
 
-<img
-	style="width:{size};height:{size}"
-	src="software/{brand.id}.svg"
-	alt="{brand.name} Icon"
-/>
-<span style="color:{brand.color}"
-	>{typeof naming === "string" ? naming : nameFormFn(naming, brand)}</span
->
+<span class="root">
+	<img
+		style="width:{size};height:{size}"
+		src="software/{brand.id}.svg"
+		alt="{brand.name} Icon"
+	/>
+	<span style="color:{brand.color}"
+		>{typeof naming === "string" ? naming : nameFormFn(naming, brand)}</span
+	>
+</span>
 
 <style lang="scss">
+	.root {
+		white-space: nowrap;
+	}
+
 	img {
 		vertical-align: middle;
 	}
