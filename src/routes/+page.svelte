@@ -155,6 +155,7 @@
 		padding-block: 1em;
 		img {
 			max-height: 90px;
+			max-width: 100%;
 		}
 	}
 </style>
