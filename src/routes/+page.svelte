@@ -49,7 +49,7 @@
 		</p>
 
 		<div class="picture">
-			<img src="picture.png" alt="Layla" />
+			<img src="picture.webp" alt="Layla" />
 		</div>
 	</article>
 	<article>
@@ -100,7 +100,7 @@
 		text-align: center;
 		margin-block-start: 2em;
 		img {
-			height: 140px;
+			height: 250px;
 			border-radius: 100%;
 		}
 	}
