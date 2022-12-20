@@ -53,8 +53,6 @@
 		</div>
 	</article>
 	<article>
-		<h2>Portfolio</h2>
-
 		<div class="topcats">
 			{#each portfolio.categories as topcat}
 				<div class="topcat">
@@ -127,6 +125,7 @@
 	.topcats {
 		display: flex;
 		flex-direction: column;
+		gap: 3em;
 	}
 
 	.topcat {
@@ -138,6 +137,10 @@
 	.cats {
 		display: flex;
 		gap: 1em;
+		flex-wrap: wrap;
+		.cat {
+			flex: 1;
+		}
 	}
 
 	.companies {
