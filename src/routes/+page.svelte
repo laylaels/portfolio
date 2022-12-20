@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Brand, * as brand from "../component/brand.svelte";
+	import portfolio from "../portfolio";
 
 	const AGE =
 		new Date(
@@ -12,32 +13,94 @@
 	<title>Layla El-Sekaifi</title>
 </svelte:head>
 
-<h2>Hi!</h2>
-<p>
-	I'm Layla El-Sekaifi, a {AGE} years-old multidisciplinary artist, retoucher and
-	video editor based in {LOCATION}.
-</p>
-<p>
-	For the past eight years I have been familiarising myself with the <Brand
-		brand={brand.adobe}
-		naming="Adobe Suite"
-	/>, mainly focussing on <Brand brand={brand.photoshop} /> but ranging through to
-	<Brand brand={brand.lightroom} />,
-	<Brand brand={brand.illustrator} />,
-	<Brand brand={brand.premiere} />,
-	<Brand brand={brand.after_effects} />, and <Brand brand={brand.indesign} />.
-</p>
-<p>
-	I have been working daily with <Brand brand={brand.lightroom} />
-	and <Brand brand={brand.photoshop} /> since 2020 as a retoucher and designer for
-	real estate clients bringing their properties to life and preparing their marketing
-	materials.
-</p>
-<p>
-	As of recent I have taken an interest in 3D, familiarising myself with the
-	software, concepts and creating models in my free time.
-</p>
-<p>
-	When I’m not working you can find me drawing, discovering new things,
-	swimming, and having a good time with friends or family :)
-</p>
+<article>
+	<h2>Hi!</h2>
+	<p>
+		I'm Layla El-Sekaifi, a {AGE} years-old multidisciplinary artist, retoucher and
+		video editor based in {LOCATION}.
+	</p>
+	<p>
+		For the past eight years I have been familiarising myself with the <Brand
+			brand={brand.adobe}
+			naming="Adobe Suite"
+		/>, mainly focussing on <Brand brand={brand.photoshop} /> but ranging through
+		to
+		<Brand brand={brand.lightroom} />,
+		<Brand brand={brand.illustrator} />,
+		<Brand brand={brand.premiere} />,
+		<Brand brand={brand.after_effects} />, and <Brand brand={brand.indesign} />.
+	</p>
+	<p>
+		I have been working daily with <Brand brand={brand.lightroom} />
+		and <Brand brand={brand.photoshop} /> since 2020 as a retoucher and designer
+		for real estate clients bringing their properties to life and preparing their
+		marketing materials.
+	</p>
+	<p>
+		As of recent I have taken an interest in 3D, familiarising myself with the
+		software, concepts and creating models in my free time.
+	</p>
+	<p>
+		When I’m not working you can find me drawing, discovering new things,
+		swimming, and having a good time with friends or family :)
+	</p>
+</article>
+<article>
+	<h2>Portfolio</h2>
+
+	<div class="topcats">
+		{#each portfolio.categories as topcat}
+			<div class="topcat">
+				<div class="iconlabel">
+					<img src="category/{topcat.id}.png" alt={topcat.name} />
+					{topcat.name}
+				</div>
+				<div class="cats">
+					{#each topcat.contents as cat}
+						<div class="cat">
+							<div class="iconlabel">
+								<img src="category/{cat.id}.png" alt={cat.name} />
+								{cat.name}
+							</div>
+						</div>
+					{/each}
+				</div>
+			</div>
+		{/each}
+	</div>
+</article>
+
+<style lang="scss">
+	.topcat img {
+		$size: 7em;
+		width: $size;
+		height: $size;
+	}
+	.cat img {
+		$size: 4.5em;
+		width: $size;
+		height: $size;
+	}
+
+	.iconlabel {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.topcats {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.topcat {
+		display: flex;
+		align-items: center;
+		gap: 1em;
+	}
+
+	.cats {
+		display: flex;
+		gap: 1em;
+	}
+</style>
