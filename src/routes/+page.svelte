@@ -145,6 +145,14 @@
 		}
 	}
 
+	.iconlabel img,
+	.iconlabel:hover {
+		transition: transform 0.25s;
+	}
+	.iconlabel:hover img {
+		transform: scale(1.1);
+	}
+
 	.companies {
 		display: flex;
 		flex-wrap: wrap;
