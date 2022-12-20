@@ -47,6 +47,10 @@
 			When I’m not working you can find me drawing, discovering new things,
 			swimming, and having a good time with friends or family :)
 		</p>
+
+		<div class="picture">
+			<img src="picture.png" alt="Layla" />
+		</div>
 	</article>
 	<article>
 		<h2>Portfolio</h2>
@@ -79,7 +83,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-
+		gap: 1em;
 		article {
 			max-width: 700px;
 		}
@@ -87,6 +91,15 @@
 
 	p {
 		margin: 1em 0;
+	}
+
+	.picture {
+		text-align: center;
+		margin-block-start: 2em;
+		img {
+			height: 140px;
+			border-radius: 100%;
+		}
 	}
 
 	.topcat img {
