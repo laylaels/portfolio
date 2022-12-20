@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from "$app/paths";
 	import Brand, * as brand from "../component/brand.svelte";
 	import portfolio from "../portfolio";
 
@@ -57,17 +58,17 @@
 		<div class="topcats">
 			{#each portfolio.categories as topcat}
 				<div class="topcat">
-					<div class="iconlabel">
+					<a class="iconlabel" href="{base}/{topcat.id}">
 						<img src="category/{topcat.id}.png" alt={topcat.name} />
 						{topcat.name}
-					</div>
+					</a>
 					<div class="cats">
 						{#each topcat.contents as cat}
 							<div class="cat">
-								<div class="iconlabel">
+								<a class="iconlabel" href="{base}/{topcat.id}#{cat.id}">
 									<img src="category/{cat.id}.png" alt={cat.name} />
 									{cat.name}
-								</div>
+								</a>
 							</div>
 						{/each}
 					</div>
@@ -153,6 +154,11 @@
 	}
 	.iconlabel:hover img {
 		transform: scale(1.1);
+	}
+
+	a.iconlabel {
+		color: inherit;
+		text-decoration: none;
 	}
 
 	.companies {
