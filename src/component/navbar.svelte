@@ -2,8 +2,8 @@
 	import { base } from "$app/paths";
 
 	export let pages = [
-		["About", "about"],
-		["Work", "work"],
+		["About", "#about"],
+		["Portfolio", "#portfolio"],
 		["Contact", "contact"],
 	];
 </script>

@@ -14,7 +14,7 @@
 </svelte:head>
 
 <div class="root">
-	<article>
+	<article id="about">
 		<h2>Hi!</h2>
 		<p>
 			I'm Layla El-Sekaifi, a {AGE} years-old multidisciplinary artist, retoucher
@@ -52,7 +52,8 @@
 			<img src="picture.webp" alt="Layla" />
 		</div>
 	</article>
-	<article>
+	<article id="portfolio">
+		<h2>Portfolio</h2>
 		<div class="topcats">
 			{#each portfolio.categories as topcat}
 				<div class="topcat">
@@ -92,8 +93,9 @@
 		}
 	}
 
-	p {
-		margin: 1em 0;
+	p,
+	h2 {
+		margin: 0.5em 0;
 	}
 
 	.picture {
