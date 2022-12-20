@@ -71,6 +71,10 @@
 </article>
 
 <style lang="scss">
+	p {
+		margin: 1em 0;
+	}
+
 	.topcat img {
 		$size: 7em;
 		width: $size;
