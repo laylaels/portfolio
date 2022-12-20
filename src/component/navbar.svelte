@@ -31,15 +31,6 @@
 		gap: 1em;
 		align-items: center;
 	}
-	@media only screen and (max-width: 480px) {
-		.root {
-			margin: 0;
-		}
-		ul {
-			flex-direction: column;
-			gap: 1em;
-		}
-	}
 
 	a {
 		color: inherit;
