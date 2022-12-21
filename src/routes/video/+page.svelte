@@ -58,7 +58,10 @@
 
 	.reel {
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 		max-width: 100%;
+
 		video {
 			aspect-ratio: 16 / 9;
 			max-width: 320px;
