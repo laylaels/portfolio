@@ -11,37 +11,51 @@
 	const categories = [
 		{
 			id: "retouch",
+			tags: ["image:retouch"],
 			name: "Retouch",
 		},
 		{
 			id: "photo_manipulation",
+			tags: ["image:manipulation"],
 			name: "Photo Manipulation",
 		},
 		{
 			id: "vstaging",
+			tags: ["vstaging"],
 			name: "Virtual Staging",
 		},
 		{
 			id: "d3",
+			tags: ["3d"],
 			name: "3D",
 		},
 		{
 			id: "video",
+			path: "video",
 			name: "Video",
 		},
 		{
 			id: "illustration",
+			tags: ["creative"],
 			name: "Illustration",
 		},
 		{
 			id: "photography",
+			tags: ["photography"],
 			name: "Photography",
 		},
 		{
 			id: "fine_art",
+			tags: ["creative"],
 			name: "Fine Art",
 		},
 	];
+
+	function categoryUrl(category: { tags: string[] } | { path: string }) {
+		return "tags" in category
+			? `${base}/portfolio?${category.tags.map(t => `tag=${t}`).join("&")}`
+			: `${base}/${category.path}`;
+	}
 </script>
 
 <svelte:head>
@@ -90,9 +104,8 @@
 	<article id="portfolio">
 		<h2>Portfolio</h2>
 		<div class="cats">
-			<!-- <object data="category.svg" type="image/svg+xml" title="Category Icons" /> -->
 			{#each categories as cat}
-				<a href="#" class="iconlabel">
+				<a href={categoryUrl(cat)} class="iconlabel">
 					<svg viewBox="0 0 200 200">
 						<use xlink:href="{base}/category.svg#{cat.id}" />
 					</svg>
