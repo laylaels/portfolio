@@ -6,6 +6,7 @@
 	export let after: string;
 	export let alt: string;
 	export let options: Partial<Options> | undefined = undefined;
+	export let loading: "eager" | "lazy" = "eager";
 
 	let root: HTMLDivElement;
 	onMount(async () => {
@@ -17,8 +18,8 @@
 </script>
 
 <div bind:this={root}>
-	<img src={before} alt="{alt} (before)" />
-	<img src={after} alt="{alt} (after)" />
+	<img src={before} alt="{alt} (before)" {loading} />
+	<img src={after} alt="{alt} (after)" {loading} />
 </div>
 
 <style lang="scss">

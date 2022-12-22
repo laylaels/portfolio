@@ -30,15 +30,39 @@
 	<title>Image Manipulation - Layla El-Sekaifi</title>
 </svelte:head>
 
-<h2>Image</h2>
+<div class="root">
+	<h2>Image</h2>
 
-{#each data as { title, count, dir }}
-	<h3>{title}</h3>
-	{#each Array(count) as _, i}
-		<BeforeAfter
-			before="{base}/img/image/{dir}/{i}b.webp"
-			after="{base}/img/image/{dir}/{i}a.webp"
-			alt={title}
-		/>
+	{#each data as { title, count, dir }}
+		<h3>{title}</h3>
+		<div class="ba">
+			<div class="content">
+				{#each Array(count) as _, i}
+					<BeforeAfter
+						before="{base}/img/image/{dir}/{i}b.webp"
+						after="{base}/img/image/{dir}/{i}a.webp"
+						alt={title}
+						loading="lazy"
+					/>
+				{/each}
+			</div>
+		</div>
 	{/each}
-{/each}
+</div>
+
+<style lang="scss">
+	.root {
+		max-width: 800px;
+		margin: auto;
+	}
+
+	h3 {
+		margin-block: 1em;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+	}
+</style>
