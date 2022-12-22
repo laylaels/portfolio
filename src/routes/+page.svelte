@@ -55,24 +55,12 @@
 	</article>
 	<article id="portfolio">
 		<h2>Portfolio</h2>
-		<div class="topcats">
-			{#each portfolio.categories as topcat}
-				<div class="topcat">
-					<a class="iconlabel" href="{base}/{topcat.id}">
-						<img src="category/{topcat.id}.png" alt={topcat.name} />
-						{topcat.name}
-					</a>
-					<div class="cats">
-						{#each topcat.contents as cat}
-							<div class="cat">
-								<a class="iconlabel" href="{base}/{topcat.id}#{cat.id}">
-									<img src="category/{cat.id}.png" alt={cat.name} />
-									{cat.name}
-								</a>
-							</div>
-						{/each}
-					</div>
-				</div>
+		<div class="cats">
+			{#each portfolio.categories as cat}
+				<a href="#" class="iconlabel">
+					<img src="category/{cat.id}.png" alt={cat.name} />
+					<span>{cat.name}</span>
+				</a>
 			{/each}
 		</div>
 	</article>
@@ -108,15 +96,16 @@
 		}
 	}
 
-	.topcat img {
-		$size: 7em;
-		width: $size;
-		height: $size;
-	}
-	.cat img {
-		$size: 4.5em;
-		width: $size;
-		height: $size;
+	.cats {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1em;
+
+		> a {
+			$size: 10em;
+			width: $size;
+			height: $size;
+		}
 	}
 
 	.iconlabel {
@@ -125,27 +114,6 @@
 		align-items: center;
 		text-align: center;
 		gap: 0.25em;
-	}
-
-	.topcats {
-		display: flex;
-		flex-direction: column;
-		gap: 3em;
-	}
-
-	.topcat {
-		display: flex;
-		align-items: center;
-		gap: 1em;
-	}
-
-	.cats {
-		display: flex;
-		gap: 1em;
-		flex-wrap: wrap;
-		.cat {
-			flex: 1;
-		}
 	}
 
 	.iconlabel img,

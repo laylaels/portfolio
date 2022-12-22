@@ -1,89 +1,46 @@
-export type Portfolio<T> = {
-	categories: Category<Category<T>[]>[],
+export type Portfolio = {
+	categories: Category[],
 }
 
-export type Category<T> = {
+export type Category = {
 	id: string,
 	name: string,
-	contents: T,
 }
 
-const data: Portfolio<void> = {
+const data: Portfolio = {
 	categories: [
 		{
-			id: "image",
-			name: "Image",
-			contents: [
-				{
-					id: "retouch",
-					name: "Retouching",
-					contents: undefined
-				},
-				{
-					id: "tod",
-					name: "Day-Time Conversion",
-					contents: undefined
-				},
-				{
-					id: "interior",
-					name: "Interior",
-					contents: undefined
-				},
-				{
-					id: "exterior",
-					name: "Exterior",
-					contents: undefined
-				},
-				{
-					id: "visualisation",
-					name: "Visualisation",
-					contents: undefined
-				},
-			]
+			id: "retouch",
+			name: "Image Retouching",
 		},
 		{
-			id: "d3",
-			name: "3D",
-			contents: [
-				{
-					id: "vstage",
-					name: "Virtual Staging",
-					contents: undefined
-				},
-				{
-					id: "modeling",
-					name: "Modeling",
-					contents: undefined
-				},
-			]
+			id: "photo_manipulate",
+			name: "Photo Manipulation",
 		},
 		{
 			id: "video",
 			name: "Video",
-			contents: [
-				{
-					id: "video_edit",
-					name: "Editing",
-					contents: undefined
-				}
-			],
 		},
 		{
-			id: "creative",
-			name: "Creative",
-			contents: [
-				{
-					id: "art",
-					name: "Art",
-					contents: undefined
-				},
-				{
-					id: "photography",
-					name: "Photography",
-					contents: undefined
-				},
-			],
-		}
+			id: "vstage",
+			name: "Virtual Staging",
+		},
+		{
+			id: "d3",
+			name: "3D",
+		},
+		{
+			id: "illustration",
+			name: "Illustration",
+		},
+		{
+			id: "photography",
+			name: "Photography",
+		},
+		{
+			id: "fine_art",
+			name: "Fine Art",
+		},
 	]
 }
 export default data;
