@@ -1,13 +1,47 @@
 <script lang="ts">
 	import { base } from "$app/paths";
 	import Brand, * as brand from "../component/brand.svelte";
-	import portfolio from "../portfolio";
 
 	const AGE =
 		new Date(
 			new Date().valueOf() - new Date("2000-07-14").valueOf()
 		).getUTCFullYear() - 1970;
 	const LOCATION = "West London";
+
+	const categories = [
+		{
+			id: "retouch",
+			name: "Retouch",
+		},
+		{
+			id: "photo_manipulation",
+			name: "Photo Manipulation",
+		},
+		{
+			id: "vstaging",
+			name: "Virtual Staging",
+		},
+		{
+			id: "d3",
+			name: "3D",
+		},
+		{
+			id: "video",
+			name: "Video",
+		},
+		{
+			id: "illustration",
+			name: "Illustration",
+		},
+		{
+			id: "photography",
+			name: "Photography",
+		},
+		{
+			id: "fine_art",
+			name: "Fine Art",
+		},
+	];
 </script>
 
 <svelte:head>
@@ -56,9 +90,12 @@
 	<article id="portfolio">
 		<h2>Portfolio</h2>
 		<div class="cats">
-			{#each portfolio.categories as cat}
+			<!-- <object data="category.svg" type="image/svg+xml" title="Category Icons" /> -->
+			{#each categories as cat}
 				<a href="#" class="iconlabel">
-					<img src="category/{cat.id}.png" alt={cat.name} />
+					<svg viewBox="0 0 200 200">
+						<use xlink:href="{base}/category.svg#{cat.id}" />
+					</svg>
 					<span>{cat.name}</span>
 				</a>
 			{/each}
