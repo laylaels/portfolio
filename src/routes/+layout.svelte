@@ -42,6 +42,7 @@
 		position: sticky;
 		top: 0;
 		background: #1c1c1c;
+		z-index: 999;
 	}
 
 	header.mini {
