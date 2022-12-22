@@ -70,10 +70,8 @@
 			and video editor based in {LOCATION}.
 		</p>
 		<p>
-			For the past eight years I have been familiarising myself with the <Brand
-				brand={brand.adobe}
-				naming="Adobe Suite"
-			/>, mainly focussing on <Brand brand={brand.photoshop} /> but ranging through
+			For the past eight years I have been familiarising myself with the Adobe
+			Suite, mainly focusing on <Brand brand={brand.photoshop} /> but ranging through
 			to
 			<Brand brand={brand.lightroom} />,
 			<Brand brand={brand.illustrator} />,

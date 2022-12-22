@@ -54,12 +54,6 @@
 		color: "#ff9a00",
 	};
 
-	export const adobe: Brand = {
-		id: "adobe",
-		name: "Adobe",
-		color: "#fa0f00",
-	};
-
 	export enum NameForm {
 		None,
 		Abbreviate,
