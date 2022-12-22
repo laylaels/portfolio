@@ -82,20 +82,25 @@
 
 <div class="root">
 	<h2>Portfolio</h2>
-	{#each data_filtered as item}
-		{#if item.data.type === "image"}
-			<img src={item.data.src} alt="Item" loading="lazy" />
-		{:else}
-			<div class="ba">
-				<BeforeAfterView
-					before={item.data.before}
-					after={item.data.after}
-					alt="Item"
-					loading="lazy"
-				/>
-			</div>
-		{/if}
-	{/each}
+	{#if data_filtered.length}
+		{data_filtered.length} items
+		{#each data_filtered as item}
+			{#if item.data.type === "image"}
+				<img src={item.data.src} alt="Item" loading="lazy" />
+			{:else}
+				<div class="ba">
+					<BeforeAfterView
+						before={item.data.before}
+						after={item.data.after}
+						alt="Item"
+						loading="lazy"
+					/>
+				</div>
+			{/if}
+		{/each}
+	{:else}
+		no results
+	{/if}
 </div>
 
 <style lang="scss">
