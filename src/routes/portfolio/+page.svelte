@@ -42,7 +42,7 @@
 	}
 
 	const data: Item[] = [
-		...seqImages("3d/asset", 3, ["3d", "3d:model"]),
+		...seqImages("3d/asset", 4, ["3d", "3d:model"]),
 		...seqBeforeAfter("3d/vstage", 12, ["3d", "vstaging"]),
 		...seqBeforeAfter("image/exterior", 5, [
 			"image",
