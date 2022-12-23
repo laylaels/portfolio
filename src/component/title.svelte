@@ -5,7 +5,7 @@
 <a href="{base}/">
 	<img alt="Logo" src="/logo.svg" />
 	<h1>Layla El-Sekaifi</h1>
-	<span>Graphics Editor</span>
+	<span>Designer</span>
 </a>
 
 <style lang="scss">
