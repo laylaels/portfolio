@@ -26,7 +26,7 @@
 		},
 		{
 			id: "d3",
-			tags: ["3d"],
+			tags: ["3d:model"],
 			name: "3D",
 		},
 		{
