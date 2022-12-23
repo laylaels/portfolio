@@ -32,5 +32,6 @@
 	h1 {
 		font-size: 3em;
 		text-shadow: 0 0 10px;
+		align-self: center;
 	}
 </style>
