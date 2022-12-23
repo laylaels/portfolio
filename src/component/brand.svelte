@@ -69,6 +69,8 @@
 </script>
 
 <script lang="ts">
+	import { base } from "$app/paths";
+
 	export let brand: Brand;
 	export let naming: NameForm | string = NameForm.Full;
 	export let size: string = "1.5em";
@@ -77,7 +79,7 @@
 <span class="root">
 	<img
 		style="width:{size};height:{size}"
-		src="software/{brand.id}.svg"
+		src="{base}/software/{brand.id}.svg"
 		alt="{brand.name} Icon"
 	/>
 	<span style="color:{brand.color}"

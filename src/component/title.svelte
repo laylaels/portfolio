@@ -3,7 +3,7 @@
 </script>
 
 <a href="{base}/">
-	<img alt="Logo" src="/logo.svg" />
+	<img alt="Logo" src="{base}/logo.svg" />
 	<h1>Layla El-Sekaifi</h1>
 	<span>Designer</span>
 </a>

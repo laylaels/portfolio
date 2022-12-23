@@ -111,7 +111,7 @@
 </div>
 <article class="companies">
 	{#each [["Dexters", "dexters.svg"], ["Fletchers", "fletchers.webp"], ["Jackson Stops", "jackson.svg"], ["Redlees Studios", "redlees.webp"], ["Snellers", "snellers.webp"], ["Wetherell", "wetherell.webp"]] as [alt, image]}
-		<img {alt} src="company/{image}" />
+		<img {alt} src="{base}/company/{image}" />
 	{/each}
 </article>
 
