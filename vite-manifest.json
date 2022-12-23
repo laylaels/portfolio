@@ -1,12 +1,168 @@
 {
+  "src/style/font/Inter-Thin.woff2": {
+    "file": "internal/immutable/assets/Inter-Thin-77d96c1c.woff2",
+    "src": "src/style/font/Inter-Thin.woff2"
+  },
+  "src/style/font/Inter-ExtraLight.woff2": {
+    "file": "internal/immutable/assets/Inter-ExtraLight-b6cd094a.woff2",
+    "src": "src/style/font/Inter-ExtraLight.woff2"
+  },
+  "src/style/font/Inter-ThinItalic.woff2": {
+    "file": "internal/immutable/assets/Inter-ThinItalic-d82beee8.woff2",
+    "src": "src/style/font/Inter-ThinItalic.woff2"
+  },
+  "src/style/font/Inter-ExtraLightItalic.woff2": {
+    "file": "internal/immutable/assets/Inter-ExtraLightItalic-db229bf3.woff2",
+    "src": "src/style/font/Inter-ExtraLightItalic.woff2"
+  },
+  "src/style/font/Inter-LightItalic.woff2": {
+    "file": "internal/immutable/assets/Inter-LightItalic-737ac201.woff2",
+    "src": "src/style/font/Inter-LightItalic.woff2"
+  },
+  "src/style/font/Inter-Medium.woff2": {
+    "file": "internal/immutable/assets/Inter-Medium-1b498b95.woff2",
+    "src": "src/style/font/Inter-Medium.woff2"
+  },
+  "src/style/font/Inter-MediumItalic.woff2": {
+    "file": "internal/immutable/assets/Inter-MediumItalic-81600858.woff2",
+    "src": "src/style/font/Inter-MediumItalic.woff2"
+  },
+  "src/style/font/Inter-Italic.woff2": {
+    "file": "internal/immutable/assets/Inter-Italic-900058df.woff2",
+    "src": "src/style/font/Inter-Italic.woff2"
+  },
+  "src/style/font/Inter-SemiBoldItalic.woff2": {
+    "file": "internal/immutable/assets/Inter-SemiBoldItalic-3b6df7d0.woff2",
+    "src": "src/style/font/Inter-SemiBoldItalic.woff2"
+  },
+  "src/style/font/Inter-SemiBold.woff2": {
+    "file": "internal/immutable/assets/Inter-SemiBold-15226129.woff2",
+    "src": "src/style/font/Inter-SemiBold.woff2"
+  },
+  "src/style/font/Inter-Bold.woff2": {
+    "file": "internal/immutable/assets/Inter-Bold-c63158ba.woff2",
+    "src": "src/style/font/Inter-Bold.woff2"
+  },
+  "src/style/font/Inter-BoldItalic.woff2": {
+    "file": "internal/immutable/assets/Inter-BoldItalic-3f211964.woff2",
+    "src": "src/style/font/Inter-BoldItalic.woff2"
+  },
+  "src/style/font/Inter-Light.woff2": {
+    "file": "internal/immutable/assets/Inter-Light-36b86832.woff2",
+    "src": "src/style/font/Inter-Light.woff2"
+  },
+  "src/style/font/Inter-ExtraBoldItalic.woff2": {
+    "file": "internal/immutable/assets/Inter-ExtraBoldItalic-cf6b1d6c.woff2",
+    "src": "src/style/font/Inter-ExtraBoldItalic.woff2"
+  },
+  "src/style/font/Inter-Black.woff2": {
+    "file": "internal/immutable/assets/Inter-Black-fc10113c.woff2",
+    "src": "src/style/font/Inter-Black.woff2"
+  },
+  "src/style/font/Inter-roman.var.woff2": {
+    "file": "internal/immutable/assets/Inter-roman.var-17fe38ab.woff2",
+    "src": "src/style/font/Inter-roman.var.woff2"
+  },
+  "src/style/font/Inter-BlackItalic.woff2": {
+    "file": "internal/immutable/assets/Inter-BlackItalic-bc80081d.woff2",
+    "src": "src/style/font/Inter-BlackItalic.woff2"
+  },
+  "src/style/font/Inter-ExtraBold.woff2": {
+    "file": "internal/immutable/assets/Inter-ExtraBold-307d9809.woff2",
+    "src": "src/style/font/Inter-ExtraBold.woff2"
+  },
+  "src/style/font/Inter-italic.var.woff2": {
+    "file": "internal/immutable/assets/Inter-italic.var-d1401419.woff2",
+    "src": "src/style/font/Inter-italic.var.woff2"
+  },
+  "src/style/font/Inter-Regular.woff2": {
+    "file": "internal/immutable/assets/Inter-Regular-d612f121.woff2",
+    "src": "src/style/font/Inter-Regular.woff2"
+  },
+  "src/style/font/Inter.var.woff2": {
+    "file": "internal/immutable/assets/Inter.var-85f08b5f.woff2",
+    "src": "src/style/font/Inter.var.woff2"
+  },
+  "src/style/font/Inter-Thin.woff": {
+    "file": "internal/immutable/assets/Inter-Thin-e6bced8e.woff",
+    "src": "src/style/font/Inter-Thin.woff"
+  },
+  "src/style/font/Inter-ExtraLight.woff": {
+    "file": "internal/immutable/assets/Inter-ExtraLight-015dad27.woff",
+    "src": "src/style/font/Inter-ExtraLight.woff"
+  },
+  "src/style/font/Inter-ExtraLightItalic.woff": {
+    "file": "internal/immutable/assets/Inter-ExtraLightItalic-32e53d8a.woff",
+    "src": "src/style/font/Inter-ExtraLightItalic.woff"
+  },
+  "src/style/font/Inter-ThinItalic.woff": {
+    "file": "internal/immutable/assets/Inter-ThinItalic-70648e9b.woff",
+    "src": "src/style/font/Inter-ThinItalic.woff"
+  },
+  "src/style/font/Inter-Medium.woff": {
+    "file": "internal/immutable/assets/Inter-Medium-53deda46.woff",
+    "src": "src/style/font/Inter-Medium.woff"
+  },
+  "src/style/font/Inter-MediumItalic.woff": {
+    "file": "internal/immutable/assets/Inter-MediumItalic-205c8989.woff",
+    "src": "src/style/font/Inter-MediumItalic.woff"
+  },
+  "src/style/font/Inter-Italic.woff": {
+    "file": "internal/immutable/assets/Inter-Italic-cd1eda97.woff",
+    "src": "src/style/font/Inter-Italic.woff"
+  },
+  "src/style/font/Inter-SemiBoldItalic.woff": {
+    "file": "internal/immutable/assets/Inter-SemiBoldItalic-95e68b6b.woff",
+    "src": "src/style/font/Inter-SemiBoldItalic.woff"
+  },
+  "src/style/font/Inter-SemiBold.woff": {
+    "file": "internal/immutable/assets/Inter-SemiBold-653fed7a.woff",
+    "src": "src/style/font/Inter-SemiBold.woff"
+  },
+  "src/style/font/Inter-Bold.woff": {
+    "file": "internal/immutable/assets/Inter-Bold-3e242080.woff",
+    "src": "src/style/font/Inter-Bold.woff"
+  },
+  "src/style/font/Inter-LightItalic.woff": {
+    "file": "internal/immutable/assets/Inter-LightItalic-7d291e85.woff",
+    "src": "src/style/font/Inter-LightItalic.woff"
+  },
+  "src/style/font/Inter-Light.woff": {
+    "file": "internal/immutable/assets/Inter-Light-4871aed0.woff",
+    "src": "src/style/font/Inter-Light.woff"
+  },
+  "src/style/font/Inter-BoldItalic.woff": {
+    "file": "internal/immutable/assets/Inter-BoldItalic-ace8e094.woff",
+    "src": "src/style/font/Inter-BoldItalic.woff"
+  },
+  "src/style/font/Inter-Black.woff": {
+    "file": "internal/immutable/assets/Inter-Black-8b21d5be.woff",
+    "src": "src/style/font/Inter-Black.woff"
+  },
+  "src/style/font/Inter-ExtraBoldItalic.woff": {
+    "file": "internal/immutable/assets/Inter-ExtraBoldItalic-6deefddf.woff",
+    "src": "src/style/font/Inter-ExtraBoldItalic.woff"
+  },
+  "src/style/font/Inter-BlackItalic.woff": {
+    "file": "internal/immutable/assets/Inter-BlackItalic-87235581.woff",
+    "src": "src/style/font/Inter-BlackItalic.woff"
+  },
+  "src/style/font/Inter-Regular.woff": {
+    "file": "internal/immutable/assets/Inter-Regular-ef1f23c0.woff",
+    "src": "src/style/font/Inter-Regular.woff"
+  },
+  "src/style/font/Inter-ExtraBold.woff": {
+    "file": "internal/immutable/assets/Inter-ExtraBold-f053602c.woff",
+    "src": "src/style/font/Inter-ExtraBold.woff"
+  },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "internal/immutable/start-2d36f1e3.js",
+    "file": "internal/immutable/start-772dcffc.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_preload-helper-0ffe6af8.js",
-      "_index-44e9d731.js",
-      "_singletons-10f2e691.js",
+      "_index-20adc7d9.js",
+      "_singletons-46458d57.js",
       "_paths-846459bd.js"
     ],
     "dynamicImports": [
@@ -15,89 +171,128 @@
       ".svelte-kit/generated/nodes/2.js",
       ".svelte-kit/generated/nodes/3.js",
       ".svelte-kit/generated/nodes/4.js",
-      ".svelte-kit/generated/nodes/5.js",
-      ".svelte-kit/generated/nodes/6.js"
+      ".svelte-kit/generated/nodes/5.js"
     ]
   },
   "src/routes/+layout.svelte": {
-    "file": "internal/immutable/components/pages/_layout.svelte-bf4ca722.js",
+    "file": "internal/immutable/components/pages/_layout.svelte-4f7401cb.js",
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index-44e9d731.js",
+      "_index-20adc7d9.js",
       "_paths-846459bd.js"
     ],
     "css": [
-      "internal/immutable/assets/_layout-f90c7d1c.css"
+      "internal/immutable/assets/_layout-1b7120a8.css"
+    ],
+    "assets": [
+      "internal/immutable/assets/Inter-Thin-77d96c1c.woff2",
+      "internal/immutable/assets/Inter-Thin-e6bced8e.woff",
+      "internal/immutable/assets/Inter-ThinItalic-d82beee8.woff2",
+      "internal/immutable/assets/Inter-ThinItalic-70648e9b.woff",
+      "internal/immutable/assets/Inter-ExtraLight-b6cd094a.woff2",
+      "internal/immutable/assets/Inter-ExtraLight-015dad27.woff",
+      "internal/immutable/assets/Inter-ExtraLightItalic-db229bf3.woff2",
+      "internal/immutable/assets/Inter-ExtraLightItalic-32e53d8a.woff",
+      "internal/immutable/assets/Inter-Light-36b86832.woff2",
+      "internal/immutable/assets/Inter-Light-4871aed0.woff",
+      "internal/immutable/assets/Inter-LightItalic-737ac201.woff2",
+      "internal/immutable/assets/Inter-LightItalic-7d291e85.woff",
+      "internal/immutable/assets/Inter-Regular-d612f121.woff2",
+      "internal/immutable/assets/Inter-Regular-ef1f23c0.woff",
+      "internal/immutable/assets/Inter-Italic-900058df.woff2",
+      "internal/immutable/assets/Inter-Italic-cd1eda97.woff",
+      "internal/immutable/assets/Inter-Medium-1b498b95.woff2",
+      "internal/immutable/assets/Inter-Medium-53deda46.woff",
+      "internal/immutable/assets/Inter-MediumItalic-81600858.woff2",
+      "internal/immutable/assets/Inter-MediumItalic-205c8989.woff",
+      "internal/immutable/assets/Inter-SemiBold-15226129.woff2",
+      "internal/immutable/assets/Inter-SemiBold-653fed7a.woff",
+      "internal/immutable/assets/Inter-SemiBoldItalic-3b6df7d0.woff2",
+      "internal/immutable/assets/Inter-SemiBoldItalic-95e68b6b.woff",
+      "internal/immutable/assets/Inter-Bold-c63158ba.woff2",
+      "internal/immutable/assets/Inter-Bold-3e242080.woff",
+      "internal/immutable/assets/Inter-BoldItalic-3f211964.woff2",
+      "internal/immutable/assets/Inter-BoldItalic-ace8e094.woff",
+      "internal/immutable/assets/Inter-ExtraBold-307d9809.woff2",
+      "internal/immutable/assets/Inter-ExtraBold-f053602c.woff",
+      "internal/immutable/assets/Inter-ExtraBoldItalic-cf6b1d6c.woff2",
+      "internal/immutable/assets/Inter-ExtraBoldItalic-6deefddf.woff",
+      "internal/immutable/assets/Inter-Black-fc10113c.woff2",
+      "internal/immutable/assets/Inter-Black-8b21d5be.woff",
+      "internal/immutable/assets/Inter-BlackItalic-bc80081d.woff2",
+      "internal/immutable/assets/Inter-BlackItalic-87235581.woff",
+      "internal/immutable/assets/Inter-roman.var-17fe38ab.woff2",
+      "internal/immutable/assets/Inter-italic.var-d1401419.woff2",
+      "internal/immutable/assets/Inter.var-85f08b5f.woff2"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "internal/immutable/components/error.svelte-7f98a23a.js",
+    "file": "internal/immutable/components/error.svelte-fd3112a6.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
-      "_index-44e9d731.js",
-      "_singletons-10f2e691.js"
+      "_index-20adc7d9.js",
+      "_stores-1ac989f1.js"
     ]
   },
   "src/routes/+page.svelte": {
-    "file": "internal/immutable/components/pages/_page.svelte-6f087efd.js",
+    "file": "internal/immutable/components/pages/_page.svelte-b485845a.js",
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index-44e9d731.js"
-    ]
-  },
-  "src/routes/3d/+page.svelte": {
-    "file": "internal/immutable/components/pages/3d/_page.svelte-0f2d25b0.js",
-    "src": "src/routes/3d/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-44e9d731.js",
-      "_paths-846459bd.js",
-      "_beforeAfter-b4bd1a26.js"
-    ],
-    "css": [
-      "internal/immutable/assets/_page-205aef51.css"
-    ]
-  },
-  "src/routes/creative/+page.svelte": {
-    "file": "internal/immutable/components/pages/creative/_page.svelte-91372c37.js",
-    "src": "src/routes/creative/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-44e9d731.js",
+      "_index-20adc7d9.js",
       "_paths-846459bd.js"
     ],
     "css": [
-      "internal/immutable/assets/_page-205aef51.css"
+      "internal/immutable/assets/_page-bf7d4752.css"
     ]
   },
-  "src/routes/image/+page.svelte": {
-    "file": "internal/immutable/components/pages/image/_page.svelte-079961dc.js",
-    "src": "src/routes/image/+page.svelte",
+  "src/routes/contact/+page.svelte": {
+    "file": "internal/immutable/components/pages/contact/_page.svelte-45b45dbe.js",
+    "src": "src/routes/contact/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index-44e9d731.js",
-      "_paths-846459bd.js",
-      "_beforeAfter-b4bd1a26.js"
+      "_index-20adc7d9.js"
+    ],
+    "css": [
+      "internal/immutable/assets/_page-3a86659b.css"
+    ]
+  },
+  "src/routes/portfolio/+page.svelte": {
+    "file": "internal/immutable/components/pages/portfolio/_page.svelte-57785d2d.js",
+    "src": "src/routes/portfolio/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-20adc7d9.js",
+      "_preload-helper-0ffe6af8.js",
+      "_stores-1ac989f1.js",
+      "_paths-846459bd.js"
+    ],
+    "dynamicImports": [
+      "node_modules/image-compare-viewer/src/scripts/index.js"
+    ],
+    "css": [
+      "internal/immutable/assets/_page-b4102143.css"
     ]
   },
   "src/routes/video/+page.svelte": {
-    "file": "internal/immutable/components/pages/video/_page.svelte-d0173045.js",
+    "file": "internal/immutable/components/pages/video/_page.svelte-4cfba783.js",
     "src": "src/routes/video/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index-44e9d731.js"
+      "_index-20adc7d9.js",
+      "_paths-846459bd.js",
+      "_stores-1ac989f1.js"
     ],
     "css": [
-      "internal/immutable/assets/_page-076d2c88.css"
+      "internal/immutable/assets/_page-1f125de4.css"
     ]
   },
-  "_singletons-10f2e691.js": {
-    "file": "internal/immutable/chunks/singletons-10f2e691.js",
+  "_singletons-46458d57.js": {
+    "file": "internal/immutable/chunks/singletons-46458d57.js",
     "imports": [
-      "_index-44e9d731.js",
+      "_index-20adc7d9.js",
       "_paths-846459bd.js"
     ]
   },
@@ -107,24 +302,18 @@
   "_preload-helper-0ffe6af8.js": {
     "file": "internal/immutable/chunks/preload-helper-0ffe6af8.js"
   },
-  "_index-44e9d731.js": {
-    "file": "internal/immutable/chunks/index-44e9d731.js"
+  "_index-20adc7d9.js": {
+    "file": "internal/immutable/chunks/index-20adc7d9.js"
   },
-  "_beforeAfter-b4bd1a26.js": {
-    "file": "internal/immutable/chunks/beforeAfter-b4bd1a26.js",
+  "_stores-1ac989f1.js": {
+    "file": "internal/immutable/chunks/stores-1ac989f1.js",
     "imports": [
-      "_preload-helper-0ffe6af8.js",
-      "_index-44e9d731.js"
-    ],
-    "dynamicImports": [
-      "node_modules/image-compare-viewer/src/scripts/index.js"
-    ],
-    "css": [
-      "internal/immutable/assets/beforeAfter-52a31083.css"
+      "_index-20adc7d9.js",
+      "_singletons-46458d57.js"
     ]
   },
   ".svelte-kit/generated/nodes/0.js": {
-    "file": "internal/immutable/chunks/0-c09f07b5.js",
+    "file": "internal/immutable/chunks/0-520106ff.js",
     "src": ".svelte-kit/generated/nodes/0.js",
     "isDynamicEntry": true,
     "imports": [
@@ -132,7 +321,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "internal/immutable/chunks/1-e9949caa.js",
+    "file": "internal/immutable/chunks/1-6c66eac3.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -140,7 +329,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "internal/immutable/chunks/2-fbc13084.js",
+    "file": "internal/immutable/chunks/2-3aad2e91.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
@@ -148,32 +337,24 @@
     ]
   },
   ".svelte-kit/generated/nodes/3.js": {
-    "file": "internal/immutable/chunks/3-b906db8b.js",
+    "file": "internal/immutable/chunks/3-577ee936.js",
     "src": ".svelte-kit/generated/nodes/3.js",
     "isDynamicEntry": true,
     "imports": [
-      "src/routes/3d/+page.svelte"
+      "src/routes/contact/+page.svelte"
     ]
   },
   ".svelte-kit/generated/nodes/4.js": {
-    "file": "internal/immutable/chunks/4-dbc5624d.js",
+    "file": "internal/immutable/chunks/4-e03e67ad.js",
     "src": ".svelte-kit/generated/nodes/4.js",
     "isDynamicEntry": true,
     "imports": [
-      "src/routes/creative/+page.svelte"
+      "src/routes/portfolio/+page.svelte"
     ]
   },
   ".svelte-kit/generated/nodes/5.js": {
-    "file": "internal/immutable/chunks/5-db99e904.js",
+    "file": "internal/immutable/chunks/5-4095f661.js",
     "src": ".svelte-kit/generated/nodes/5.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/image/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/6.js": {
-    "file": "internal/immutable/chunks/6-37d3347b.js",
-    "src": ".svelte-kit/generated/nodes/6.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/video/+page.svelte"
@@ -185,20 +366,24 @@
     "isDynamicEntry": true
   },
   "src/routes/+layout.css": {
-    "file": "internal/immutable/assets/_layout-f90c7d1c.css",
+    "file": "internal/immutable/assets/_layout-1b7120a8.css",
     "src": "src/routes/+layout.css"
   },
-  "src/routes/creative/+page.css": {
-    "file": "internal/immutable/assets/_page-205aef51.css",
-    "src": "src/routes/creative/+page.css"
-  },
-  "beforeAfter.css": {
-    "file": "internal/immutable/assets/beforeAfter-52a31083.css",
-    "src": "beforeAfter.css"
+  "src/routes/+page.css": {
+    "file": "internal/immutable/assets/_page-bf7d4752.css",
+    "src": "src/routes/+page.css"
   },
   "src/routes/video/+page.css": {
-    "file": "internal/immutable/assets/_page-076d2c88.css",
+    "file": "internal/immutable/assets/_page-1f125de4.css",
     "src": "src/routes/video/+page.css"
+  },
+  "src/routes/contact/+page.css": {
+    "file": "internal/immutable/assets/_page-3a86659b.css",
+    "src": "src/routes/contact/+page.css"
+  },
+  "src/routes/portfolio/+page.css": {
+    "file": "internal/immutable/assets/_page-b4102143.css",
+    "src": "src/routes/portfolio/+page.css"
   },
   "node_modules/image-compare-viewer/dist/image-compare-viewer.min.css": {
     "file": "internal/immutable/assets/image-compare-viewer.min-8588ba3c.css",
