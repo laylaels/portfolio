@@ -94,7 +94,6 @@
 			When I’m not working you can find me drawing, discovering new things,
 			swimming, and having a good time with friends or family :)
 		</p>
-
 	</article>
 	<article id="portfolio">
 		<h2>Portfolio</h2>
@@ -152,12 +151,8 @@
 		gap: 0.25em;
 	}
 
-	.iconlabel img,
 	.iconlabel:hover {
 		transition: transform 0.25s;
-	}
-	.iconlabel:hover img {
-		transform: scale(1.1);
 	}
 
 	a.iconlabel {
