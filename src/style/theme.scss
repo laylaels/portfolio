@@ -1,12 +1,10 @@
 @import "palette.scss";
 
-@font-face {
-  font-family: Coquette Light;
-  src: url("/Coquette Light.ttf");
-}
-
 html {
   background: $colorBg;
   color: $colorFg;
-  font-family: sans-serif;
-}
+}	
+
+body {
+		font-family: "Inter";
+	}

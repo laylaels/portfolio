@@ -19,7 +19,6 @@
 			height: 100%;
 		}
 		span {
-			font-family: Coquette Light, sans-serif;
 			font-size: 1.5em;
 			justify-self: center;
 		}
@@ -31,7 +30,6 @@
 	}
 
 	h1 {
-		font-family: Coquette Light, sans-serif;
 		font-size: 3em;
 		text-shadow: 0 0 10px;
 	}
