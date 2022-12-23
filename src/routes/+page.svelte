@@ -95,9 +95,6 @@
 			swimming, and having a good time with friends or family :)
 		</p>
 
-		<div class="picture">
-			<img src="picture.webp" alt="Layla" />
-		</div>
 	</article>
 	<article id="portfolio">
 		<h2>Portfolio</h2>
@@ -133,15 +130,6 @@
 	p,
 	h2 {
 		margin: 0.5em 0;
-	}
-
-	.picture {
-		text-align: center;
-		margin-block-start: 2em;
-		img {
-			height: 250px;
-			border-radius: 100%;
-		}
 	}
 
 	.cats {
