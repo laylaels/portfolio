@@ -59,7 +59,7 @@
 
 	const data: Item[] = [
 		...seqImages("retouch", 1, ["image", "retouch"]),
-		...seqBeforeAfter("retouch", 14, ["image", "retouch"]),
+		...seqBeforeAfter("retouch", 12, ["image", "retouch"]),
 		...seqImages("3d_model", 4, ["3d", "3d:model"]),
 		...seqBeforeAfter("vstage", 14, ["3d", "vstaging"]),
 		...seqBeforeAfter("image/exterior", 5, [
@@ -96,7 +96,9 @@
 <script lang="ts">
 	$: tags = $page.url.searchParams.getAll("tag");
 	$: data_filtered = filterData(tags);
-	$: tagsDisplay = tags.length ? tags.map(tag => tagNames[tag]).join(", ") : "all";
+	$: tagsDisplay = tags.length
+		? tags.map(tag => tagNames[tag]).join(", ")
+		: "all";
 </script>
 
 <div class="root">
