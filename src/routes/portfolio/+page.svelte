@@ -42,8 +42,8 @@
 	}
 
 	const data: Item[] = [
-		...seqImages("3d/asset", 4, ["3d", "3d:model"]),
-		...seqBeforeAfter("3d/vstage", 12, ["3d", "vstaging"]),
+		...seqImages("3d_model", 4, ["3d", "3d:model"]),
+		...seqBeforeAfter("vstage", 14, ["3d", "vstaging"]),
 		...seqBeforeAfter("image/exterior", 5, [
 			"image",
 			"image:manipulation",
@@ -55,14 +55,13 @@
 			"interior",
 		]),
 		...seqBeforeAfter("image/tod", 8, ["image", "image:manipulation", "tod"]),
-		...seqBeforeAfter("image/viz", 8, [
+		...seqBeforeAfter("image/viz", 1, [
 			"image",
 			"image:manipulation",
 			"visualisation",
 		]),
-		...seqImages("creative/art", 11, ["creative", "art"]),
-		...seqImages("creative/character", 6, ["creative", "art", "character"]),
-		...seqImages("photography", 7, ["creative", "art", "photography"]),
+		...seqImages("art", 8, ["illustration", "art"]),
+		...seqImages("photography", 7, ["art", "photography"]),
 	];
 
 	function filterData(filter_tags: Tag[]): Item[] {

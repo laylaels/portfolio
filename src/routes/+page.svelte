@@ -36,7 +36,7 @@
 		},
 		{
 			id: "illustration",
-			tags: ["creative"],
+			tags: ["illustration"],
 			name: "Illustration",
 		},
 		{
@@ -46,7 +46,7 @@
 		},
 		{
 			id: "fine_art",
-			tags: ["creative"],
+			tags: ["illustration", "illustration:art"],
 			name: "Fine Art",
 		},
 	];
