@@ -42,6 +42,8 @@
 	}
 
 	const data: Item[] = [
+		...seqImages("retouch", 1, ["image", "image:retouch"]),
+		...seqBeforeAfter("retouch", 14, ["image", "image:retouch"]),
 		...seqImages("3d_model", 4, ["3d", "3d:model"]),
 		...seqBeforeAfter("vstage", 14, ["3d", "vstaging"]),
 		...seqBeforeAfter("image/exterior", 5, [
