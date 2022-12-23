@@ -62,6 +62,7 @@
 		]),
 		...seqImages("creative/art", 6, ["creative", "art"]),
 		...seqImages("creative/character", 6, ["creative", "art", "character"]),
+		...seqImages("photography", 7, ["creative", "art", "photography"]),
 	];
 
 	function filterData(filter_tags: Tag[]): Item[] {
