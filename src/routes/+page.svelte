@@ -11,7 +11,7 @@
 	const categories = [
 		{
 			id: "retouch",
-			tags: ["image:retouch"],
+			tags: ["retouch"],
 			name: "Retouch",
 		},
 		{

@@ -41,9 +41,25 @@
 		}));
 	}
 
+	const tagNames: { [tag: string]: string } = {
+		retouch: "Retouching",
+		image: "Image Editing",
+		"3d": "3D",
+		"3d_model": "3D Modeling",
+		vstage: "Virtual Staging",
+		exterior: "Exterior",
+		interior: "Interior",
+		"image:manipulation": "Image Manipulation",
+		tod: "Time of Day Conversion",
+		visualisation: "Visualisation",
+		illustration: "Illustration",
+		art: "Art",
+		photography: "Photography",
+	};
+
 	const data: Item[] = [
-		...seqImages("retouch", 1, ["image", "image:retouch"]),
-		...seqBeforeAfter("retouch", 14, ["image", "image:retouch"]),
+		...seqImages("retouch", 1, ["image", "retouch"]),
+		...seqBeforeAfter("retouch", 14, ["image", "retouch"]),
 		...seqImages("3d_model", 4, ["3d", "3d:model"]),
 		...seqBeforeAfter("vstage", 14, ["3d", "vstaging"]),
 		...seqBeforeAfter("image/exterior", 5, [
@@ -80,12 +96,13 @@
 <script lang="ts">
 	$: tags = $page.url.searchParams.getAll("tag");
 	$: data_filtered = filterData(tags);
+	$: tagsDisplay = tags.length ? tags.map(tag => tagNames[tag]).join(", ") : "all";
 </script>
 
 <div class="root">
 	<h2>Portfolio</h2>
 	{#if data_filtered.length}
-		{data_filtered.length} items
+		{tagsDisplay} - {data_filtered.length} items
 		{#each data_filtered as item}
 			{#if item.data.type === "image"}
 				<img src={item.data.src} alt="Item" loading="lazy" />
