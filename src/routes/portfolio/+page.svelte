@@ -55,6 +55,7 @@
     visualisation: "Visualisation",
     illustration: "Illustration",
     art: "Art",
+    fine_art: "Fine Art",
     photography: "Photography",
   };
 
@@ -79,7 +80,8 @@
       "image:manipulation",
       "visualisation",
     ]),
-    ...seqImages("art", 8, ["illustration", "art"]),
+    ...seqImages("art", 8, ["art", "fine_art"]),
+    ...seqImages("illustrations", 8, ["illustration", "art"]),
     ...seqImages("photography", 7, ["art", "photography"]),
     {
       tags: ["illustration", "animation"],
