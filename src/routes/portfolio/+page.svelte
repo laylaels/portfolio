@@ -82,7 +82,7 @@
     ]),
     ...seqImages("art", 8, ["art", "fine_art"]),
     ...seqImages("illustrations", 8, ["illustration", "art"]),
-    ...seqImages("photography", 7, ["art", "photography"]),
+    ...seqImages("photography", 15, ["art", "photography"]),
     {
       tags: ["illustration", "animation"],
       data: {
