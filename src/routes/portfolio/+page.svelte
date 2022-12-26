@@ -6,10 +6,11 @@
   type Tag = string;
   type Item = {
     tags: Tag[];
-    data: Image | Video | BeforeAfter;
+    data: Image | Pdf | Video | BeforeAfter;
   };
   type Image = { type: "image"; src: string };
   type Video = { type: "video"; src: string };
+  type Pdf = { type: "pdf"; src: string };
   type BeforeAfter = {
     type: "before-after";
     before: string;
@@ -97,6 +98,34 @@
         src: `${base}/portfolio/illustrations/a.webm`,
       },
     },
+    {
+      tags: ["illustration", "brochure", "brochure:shard"],
+      data: {
+        type: "pdf",
+        src: `${base}/portfolio/brochure/s.pdf`,
+      },
+    },
+    {
+      tags: ["illustration", "brochure", "brochure:shard"],
+      data: {
+        type: "image",
+        src: `${base}/portfolio/brochure/s1.svg`,
+      },
+    },
+    {
+      tags: ["illustration", "brochure", "brochure:shard"],
+      data: {
+        type: "image",
+        src: `${base}/portfolio/brochure/s2.svg`,
+      },
+    },
+    {
+      tags: ["illustration", "brochure", "brochure:shard"],
+      data: {
+        type: "image",
+        src: `${base}/portfolio/brochure/s3.svg`,
+      },
+    },
   ];
 
   function filterData(filter_tags: Tag[]): Item[] {
@@ -127,6 +156,13 @@
         <img src={item.data.src} alt="Item" loading="lazy" />
       {:else if item.data.type === "video"}
         <video src={item.data.src} autoplay muted loop />
+      {:else if item.data.type === "pdf"}
+        <embed
+          src={item.data.src}
+          width="800"
+          height="1000"
+          type="application/pdf"
+        />
       {:else}
         <div class="ba">
           <BeforeAfterView
@@ -153,7 +189,8 @@
 
   img,
   .ba,
-  video {
+  video,
+  embed {
     max-width: 800px;
   }
 </style>
