@@ -171,8 +171,6 @@
     margin-block-start: 3em;
     padding-block: 1em;
     img {
-      // max-height: 90px;
-      // max-width: 100%;
       height: 2em;
       opacity: 0.5;
     }
