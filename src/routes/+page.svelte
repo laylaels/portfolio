@@ -110,7 +110,7 @@
   </article>
 </div>
 <article class="companies">
-  {#each [["Dexters", "dexters.svg"], ["Fletchers", "fletchers.webp"], ["Jackson Stops", "jackson.svg"], ["Redlees Studios", "redlees.webp"], ["Snellers", "snellers.webp"], ["Wetherell", "wetherell.webp"]] as [alt, image]}
+  {#each [["Dexters", "dexters.svg"], ["Wetherell", "wetherell.svg"], ["Jackson Stops", "jackson.svg"], ["Snellers", "snellers.svg"], ["Roybrooks", "roybrooks.svg"], ["Redlees Studios", "redlees.svg"], ["Fletchers", "fletchers.svg"], ["Frank Harris", "frankharris.svg"]] as [alt, image]}
     <img {alt} src="{base}/company/{image}" />
   {/each}
 </article>
@@ -171,8 +171,10 @@
     margin-block-start: 3em;
     padding-block: 1em;
     img {
-      max-height: 90px;
-      max-width: 100%;
+      // max-height: 90px;
+      // max-width: 100%;
+      height: 2em;
+      opacity: 0.5;
     }
   }
 </style>
