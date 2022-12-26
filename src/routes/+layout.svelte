@@ -33,12 +33,18 @@
 <style lang="scss">
   header {
     flex-wrap: wrap;
-    margin-block-end: 1em;
     padding-block: 1em;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     background: #1c1c1c;
     z-index: 999;
+  }
+
+  main {
+    position: relative;
+    top: 150px;
   }
 
   header.mini {
