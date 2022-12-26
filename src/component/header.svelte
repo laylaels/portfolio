@@ -1,11 +1,15 @@
 <script>
   import { base } from "$app/paths";
+
+  export let mini = false;
 </script>
 
-<div class="root">
+<div class="root" class:mini>
   <div class="title">
-    <h1>Layla El-Sekaifi</h1>
-    <span>Designer</span>
+    <h1>
+      {#if mini}Layla{:else}Layla El-Sekaifi{/if}
+    </h1>
+    {#if !mini}<span>Designer</span>{/if}
   </div>
 
   <nav>
@@ -24,6 +28,10 @@
     align-items: center;
     justify-content: center;
     gap: 1em;
+
+    &.mini {
+      flex-wrap: nowrap;
+    }
   }
 
   .title {
@@ -49,7 +57,6 @@
 
     border: solid $colorFg;
     border-width: 1px 0;
-    margin: 0 2em;
     padding: 0.75em 0;
   }
 

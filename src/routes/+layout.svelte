@@ -21,7 +21,7 @@
 </svelte:head>
 
 <header class:mini={miniHeader}>
-  <Header />
+  <Header mini={miniHeader} />
 </header>
 
 <main>
