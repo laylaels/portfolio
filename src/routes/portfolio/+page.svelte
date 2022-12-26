@@ -6,11 +6,12 @@
   type Tag = string;
   type Item = {
     tags: Tag[];
-    data: Image | Pdf | Video | BeforeAfter;
+    data: Image | GoogleDrivePdfEmbed | Pdf | Video | BeforeAfter;
   };
   type Image = { type: "image"; src: string };
   type Video = { type: "video"; src: string };
   type Pdf = { type: "pdf"; src: string };
+  type GoogleDrivePdfEmbed = { type: "google-drive-pdf"; id: string };
   type BeforeAfter = {
     type: "before-after";
     before: string;
@@ -99,6 +100,13 @@
       },
     },
     {
+      tags: ["illustration", "brochure"],
+      data: {
+        type: "google-drive-pdf",
+        id: "16Z771XjCKey7VNDE9X18rmOs39xZoSTs",
+      },
+    },
+    {
       tags: ["illustration", "brochure", "brochure:shard"],
       data: {
         type: "pdf",
@@ -163,6 +171,14 @@
           height="1000"
           type="application/pdf"
         />
+      {:else if item.data.type === "google-drive-pdf"}
+        <iframe
+          title="PDF"
+          src="https://drive.google.com/file/d/{item.data.id}/preview"
+          width="800"
+          height="1000"
+          allow="autoplay"
+        />
       {:else}
         <div class="ba">
           <BeforeAfterView
@@ -190,7 +206,8 @@
   img,
   .ba,
   video,
-  embed {
+  embed,
+  iframe {
     max-width: 800px;
   }
 </style>
