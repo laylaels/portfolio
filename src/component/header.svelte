@@ -28,6 +28,7 @@
     align-items: center;
     justify-content: center;
     gap: 1em;
+    margin-inline: 1em;
 
     &.mini {
       flex-wrap: nowrap;
