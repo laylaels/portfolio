@@ -44,7 +44,9 @@
 
   main {
     position: relative;
-    top: 150px;
+    $OFFSET_FOR_HEADER: 150px;
+    top: $OFFSET_FOR_HEADER;
+    margin-block-end: calc($OFFSET_FOR_HEADER + 2em);
   }
 
   header.mini {
