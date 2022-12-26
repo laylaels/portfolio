@@ -6,10 +6,12 @@
 
 <div class="root" class:mini>
   <div class="title">
-    <h1>
-      {#if mini}Layla{:else}Layla El-Sekaifi{/if}
-    </h1>
-    {#if !mini}<span>Designer</span>{/if}
+    <a href="{base}/">
+      <h1>
+        {#if mini}Layla{:else}Layla El-Sekaifi{/if}
+      </h1>
+      {#if !mini}<span>Designer</span>{/if}
+    </a>
   </div>
 
   <nav>
