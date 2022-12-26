@@ -6,9 +6,10 @@
   type Tag = string;
   type Item = {
     tags: Tag[];
-    data: Image | BeforeAfter;
+    data: Image | Video | BeforeAfter;
   };
   type Image = { type: "image"; src: string };
+  type Video = { type: "video"; src: string };
   type BeforeAfter = {
     type: "before-after";
     before: string;
@@ -80,6 +81,20 @@
     ]),
     ...seqImages("art", 8, ["illustration", "art"]),
     ...seqImages("photography", 7, ["art", "photography"]),
+    {
+      tags: ["illustration", "animation"],
+      data: {
+        type: "video",
+        src: `${base}/portfolio/illustrations/eye.webm`,
+      },
+    },
+    {
+      tags: ["illustration", "animation"],
+      data: {
+        type: "video",
+        src: `${base}/portfolio/illustrations/a.webm`,
+      },
+    },
   ];
 
   function filterData(filter_tags: Tag[]): Item[] {
@@ -108,6 +123,8 @@
     {#each data_filtered as item}
       {#if item.data.type === "image"}
         <img src={item.data.src} alt="Item" loading="lazy" />
+      {:else if item.data.type === "video"}
+        <video src={item.data.src} autoplay muted loop />
       {:else}
         <div class="ba">
           <BeforeAfterView
@@ -133,7 +150,8 @@
   }
 
   img,
-  .ba {
+  .ba,
+  video {
     max-width: 800px;
   }
 </style>
