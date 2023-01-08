@@ -49,6 +49,11 @@
       tags: ["fine_art"],
       name: "Fine Art",
     },
+    {
+      id: "brochure",
+      tags: ["brochure"],
+      name: "Brochure",
+    },
   ];
 
   function categoryUrl(category: { tags: string[] } | { path: string }) {

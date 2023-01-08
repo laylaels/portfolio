@@ -100,35 +100,35 @@
       },
     },
     {
-      tags: ["illustration", "brochure"],
+      tags: ["brochure"],
       data: {
         type: "google-drive-pdf",
         id: "16Z771XjCKey7VNDE9X18rmOs39xZoSTs",
       },
     },
     {
-      tags: ["illustration", "brochure", "brochure:shard"],
+      tags: ["brochure", "brochure:shard"],
       data: {
         type: "pdf",
         src: `${base}/portfolio/brochure/s.pdf`,
       },
     },
     {
-      tags: ["illustration", "brochure", "brochure:shard"],
+      tags: ["brochure", "brochure:shard"],
       data: {
         type: "image",
         src: `${base}/portfolio/brochure/s1.svg`,
       },
     },
     {
-      tags: ["illustration", "brochure", "brochure:shard"],
+      tags: ["brochure", "brochure:shard"],
       data: {
         type: "image",
         src: `${base}/portfolio/brochure/s2.svg`,
       },
     },
     {
-      tags: ["illustration", "brochure", "brochure:shard"],
+      tags: ["brochure", "brochure:shard"],
       data: {
         type: "image",
         src: `${base}/portfolio/brochure/s3.svg`,
