@@ -59,6 +59,7 @@
     art: "Art",
     fine_art: "Fine Art",
     photography: "Photography",
+    brochure: "Brochure",
   };
 
   const data: Item[] = [
