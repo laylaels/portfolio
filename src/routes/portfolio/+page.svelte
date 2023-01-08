@@ -64,7 +64,7 @@
   const data: Item[] = [
     ...seqImages("retouch", 1, ["image", "retouch"]),
     ...seqBeforeAfter("retouch", 12, ["image", "retouch"]),
-    ...seqImages("3d_model", 5, ["3d", "3d:model"]),
+    ...seqImages("3d_model", 6, ["3d", "3d:model"]),
     ...seqBeforeAfter("vstage", 12, ["3d", "vstaging"]),
     ...seqBeforeAfter("image/exterior", 5, [
       "image",
