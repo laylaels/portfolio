@@ -1,6 +1,7 @@
 <script lang="ts" context="module">
   import { base } from "$app/paths";
   import { page } from "$app/stores";
+  import * as portfolio from "../portfolio";
   import BeforeAfterView from "../../component/beforeAfter.svelte";
 
   type Tag = string;
@@ -43,24 +44,6 @@
       },
     }));
   }
-
-  const tagNames: { [tag: string]: string } = {
-    retouch: "Retouching",
-    image: "Image Editing",
-    "3d": "3D",
-    "3d_model": "3D Modeling",
-    vstage: "Virtual Staging",
-    exterior: "Exterior",
-    interior: "Interior",
-    "image:manipulation": "Image Manipulation",
-    tod: "Time of Day Conversion",
-    visualisation: "Visualisation",
-    illustration: "Illustration",
-    art: "Art",
-    fine_art: "Fine Art",
-    photography: "Photography",
-    brochure: "Brochure",
-  };
 
   const data: Item[] = [
     ...seqImages("retouch", 1, ["image", "retouch"]),
@@ -152,7 +135,7 @@
   $: tags = $page.url.searchParams.getAll("tag");
   $: data_filtered = filterData(tags);
   $: tagsDisplay = tags.length
-    ? tags.map((tag) => tagNames[tag]).join(", ")
+    ? tags.map((tag) => portfolio.tagDisplay(tag)).join(", ")
     : "all";
 </script>
 

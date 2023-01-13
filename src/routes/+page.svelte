@@ -1,5 +1,7 @@
 <script lang="ts">
   import { base } from "$app/paths";
+  import { categories } from "./portfolio";
+  import * as portfolio from "./portfolio";
   import Brand, * as brand from "../component/brand.svelte";
 
   const AGE =
@@ -7,60 +9,6 @@
       new Date().valueOf() - new Date("2000-07-14").valueOf()
     ).getUTCFullYear() - 1970;
   const LOCATION = "West London";
-
-  const categories = [
-    {
-      id: "retouch",
-      tags: ["retouch"],
-      name: "Retouch",
-    },
-    {
-      id: "photo_manipulation",
-      tags: ["image:manipulation"],
-      name: "Photo Manipulation",
-    },
-    {
-      id: "vstaging",
-      tags: ["vstaging"],
-      name: "Virtual Staging",
-    },
-    {
-      id: "d3",
-      tags: ["3d:model"],
-      name: "3D",
-    },
-    {
-      id: "video",
-      path: "video",
-      name: "Video",
-    },
-    {
-      id: "illustration",
-      tags: ["illustration"],
-      name: "Illustration",
-    },
-    {
-      id: "photography",
-      tags: ["photography"],
-      name: "Photography",
-    },
-    {
-      id: "fine_art",
-      tags: ["fine_art"],
-      name: "Fine Art",
-    },
-    {
-      id: "brochure",
-      tags: ["brochure"],
-      name: "Brochure",
-    },
-  ];
-
-  function categoryUrl(category: { tags: string[] } | { path: string }) {
-    return "tags" in category
-      ? `${base}/portfolio?${category.tags.map((t) => `tag=${t}`).join("&")}`
-      : `${base}/${category.path}`;
-  }
 </script>
 
 <svelte:head>
@@ -104,7 +52,7 @@
     <h2>Portfolio</h2>
     <div class="cats">
       {#each categories as cat}
-        <a href={categoryUrl(cat)} class="iconlabel">
+        <a href={portfolio.categoryUrl(cat)} class="iconlabel">
           <svg viewBox="0 0 200 200">
             <use xlink:href="{base}/category.svg#{cat.id}" />
           </svg>
